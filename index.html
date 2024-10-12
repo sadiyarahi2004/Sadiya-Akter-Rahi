@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Welcome to Rahi's Portfolio." />
+   
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio | Sadiya Akter Rahi</title>
+    <link rel="icon" class="logo" href="rahi.png" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+
+
+
+
+   
+</head>
+<body oncontextmenu="return false"> 
+   
+
+   
+
+    <div href="#" class="logo">Rahi 
+    </div>  
+       <div id="loader" class="loader">
+        <!-- <div class="loader-icon">𓍢ִ໋🌷͙֒Welcome...</div> -->
+         <div class="animation">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+ <section>
+     <header>       
+
+    
+          <h1>﷽</h1>
+        
+          <h2>Sadiya|Akter|Rahi</h2>
+         <p class="magic-words"> class 8th student</p>
+      
+        <button id="settings-btn" class="settings-btn">⚙️</button>  
+    </header> 
+    
+    
+ 
+    
+
+            <div id="settings-modal" class="settings-modal hidden">
+                <div class="settings-content">
+                    <h1>Settings</h1>
+            
+            <div class="toggle-container">
+                <label class="switch">
+                    <input type="checkbox" id="toggle-button">
+                    <span class="slider"></span>
+                </label>
+                <span class="theme-label" id="theme-label">Light Mode</span>
+            </div>
+         
+           
+           
+      
+
+            <label for="fontStyle">Select Font Style:</label>
+            <select id="fontStyle" name="fontStyle">
+                <option value="Righteous" selected>Righteous</option>
+                <option value="Arial">Arial</option>
+                <option value="Courier New">Courier New</option>
+                <option value="Londrina Sketch">Londrina Sketch</option>
+                <option value="Pacifico">Pacifico</option>
+                <option value="Pirata One">Pirata One</option>
+                <option value="Indie Flower">Indie Flower</option>
+            </select>
+
+
+
+            <div class="font-size">
+                <label for="font-size">Font Size:</label>
+                <select id="font-size">
+                    <option value="25px">Default</option>
+                      <option value="15px">Small</option> 
+                    <option value="28px">Large</option>
+                    <option value="31px">2X-Large</option>
+                </select>
+            </div>
+
+       
+
+            <div class="color-theme">
+                <label for="color-theme">Color Theme:</label>
+                <select id="color-theme">
+                    <option value="">Default</option>
+                    <option value="pastel">Pastel</option>
+                    <option value="vibrant">Vibrant</option>
+                </select>
+            </div>
+
+
+            <div class="text-color">
+                <label for="text-color">Text Color:</label>
+                <input type="color" id="text-color" value="#333333">
+            </div>
+
+
+       
+        
+
+        <div class="setting-option">
+            <label for="background-image">Upload Background Image: </label>
+            <input type="file" id="background-image" accept="image/*" onchange="changeBackground(event)">
+        </div>
+ 
+
+  
+  
+
+
+
+            <button id="reset-settings">Reset Settings</button>       
+            <button id="close-settings">Close</button>
+        </div>
+    </div>
+
+    <main>
+    </section id="about"> 
+  
+ <div class="aboutMe">
+     </div>
+     
+            <h1 >About Me ⁀➴ </h1>
+            <p>Hi! I'm Sadiya Akter Rahi, a hardworkind, well-mannered and friendly girl with a positive attitude to work.
+                Besides, a web developer with a passion for creating beautiful and functional websites. •ᴗ•</p>
+                <h2></h2>
+                
+        
+        <div id="more-info" class="hidden">
+            <h1>More About Me!</h1>
+            <p>As a relentless dreamer, I’m always looking toward the horizon. My mission?
+                To be a successful lady.As a responsible child of my parents, 
+                I aspire to be a source of pride and support for my parents. I want them to see that their 
+                sacrifices were not in vain—that their values and teachings have shaped me into a person who strives 
+                for excellence and compassion. I dream of being someone they can rely on,
+                 knowing that I will always be there for them, just as they have always been there for me.</p>
+                <!-- <h1>If the question is what's your dream?</h1>
+                <p>then the answer will be...</p> -->
+                <h6>╰┈➤Fulfilling my parent's dream is my biggest dream.</h6>        </div>
+    </div>
+ <a href="#" class="learn-more-button" onclick="toggleInfo()">Read More!</a>
+
+    <script>
+        function toggleInfo() {
+            const info = document.getElementById('more-info');
+            info.classList.toggle('hidden');
+        } 
+       
+    </script>
+              
+    </section>
+
+  
+  
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+        <!--Google Fonts and Icons-->
+        <link
+          href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Round|Material+Icons+Sharp|Material+Icons+Two+Tone"
+          rel="stylesheet"
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+          rel="stylesheet"
+        />
+        <style>
+           /* body {
+            width: 100%;
+            height: 50vh;
+            margin: 0;
+            padding: 0;
+          }  */
+          .center {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+             /* background: linear-gradient(45deg, rgb(15, 18, 25), rgb(16, 45, 98));  */
+            
+          }
+          .progress {
+            width: 280px;
+            height: 300px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+          }
+          .bar {
+            width: 75px;
+            border-radius: 3mm;
+            position: relative;
+            animation: progress 1s ease-out;
+          }
+          .bar:nth-child(1) {
+            height: calc(150px * 0.5);
+            background: linear-gradient(rgb(246, 225, 73), transparent 100%);
+          }
+          .bar:nth-child(2) {
+            height: calc(150px * 0.9);
+            background: linear-gradient(rgb(122, 209, 69), transparent 100%);
+          }
+          .bar:nth-child(3) {
+            height: calc(150px * 0.4);
+            background: linear-gradient(rgb(244, 115, 116), transparent 100%);
+          }
+          .text {
+            position: absolute;
+            top: -70px;
+            left: 50%;
+            width: 100%;
+            height: fit-content;
+            transform: translate(-50%, 0);
+            color: rgb(119, 119, 119);
+            font-family: poppins;
+            font-size: 12px;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+          }
+          .text span {
+            font-weight: 200;
+          }
+          .bar::before {
+            position: absolute;
+            content: "";
+            top: 20px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            width: 8px;
+            height: 8px;
+            background: white;
+            border-radius: 50%;
+          }
+          .text::before {
+            position: absolute;
+            content: "";
+            bottom: -55px;
+            left: 50%;
+            transform: translate(-50%, 0);
+            background: linear-gradient(transparent 1%, rgb(255, 255, 255));
+            border-radius: 0.5mm;
+            width: 1px;
+            height: 55px;
+          }
+          @keyframes progress {
+            from {
+              height: 0;
+            }
+          }
+          .bar:hover::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            border-radius: 3mm;
+            background: repeating-linear-gradient(
+              45deg,
+              rgba(255, 255, 255, 0.4) 0,
+              rgba(255, 255, 255, 0.4) 0.4mm,
+              transparent 0.4mm,
+              transparent 1.2mm
+            );
+            animation: move 5s linear infinite;
+            background-size: 200% 100%;
+          }
+          @keyframes move {
+            0% {
+              background-position: 100% 0;
+            }
+            100% {
+              background-position: 0 0;
+            }
+          }
+        </style>
+      </head>
+      <body>
+        <section id="skills">
+        <h1>Skill Bar📊➼</h1>
+       
+        <div class="center">
+          <div class="progress">
+            <div class="bar">
+              <div class="text">
+                <span>HTML</span>
+                50%
+              </div>
+            </div>
+            <div class="bar">
+              <div class="text">
+                <span>CSS</span>
+                90%
+              </div>
+            </div>
+            <div class="bar">
+              <div class="text">
+                <span>JS</span>
+                40%
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+      </body>
+
+
+        <section class="fade-in" id="project">
+            <h1>Project</h1>
+            
+            <div class="project-card">
+                <!-- <h3>͙֒1st Project</h3> -->
+                <h5>⎛⎝ ≽  >  ⩊   < ≼ ⎠⎞</h5>
+                <h5>More About Me!</h5>
+                <h2>Click Here⤵</h2>
+                <a href="https://sadiyarahi2004.github.io/Hi/" target="_blank">
+                    <img src="rr.jpeg" alt="Example Site 1" class="link-icon">Sadiya Rahi  
+              </a>
+            </div>
+</section>
+
+            <section>
+                <h1>🎓 Education</h1>
+                <div class="education-item">
+                    <div class="icon">📚</div>
+                    <h3>Primary Education</h3>
+                    <p><strong>Scholar Academy</strong>, 2017 - 2021</p>
+                  
+                </div>
+                <div class="education-item">
+                    <div class="icon">📚</div>
+                    <h3>Lower Secondary Education</h3>
+                    <p><strong>Kaharol Pilot Girls High School</strong>, 2022 - 2024</p>
+                        </div>
+            </section>
+  
+<section id="contact">
+
+    
+    <form class="contactForm" action="https://api.web3forms.com/submit" method="POST">
+<h1>Contact Me𓍢ִ໋🌷</h1>
+
+        <!-- Replace with your Access Key -->
+        <input type="hidden" name="access_key" value="9f233915-f0d4-4d26-9de6-084c9610d7e2">
+    
+        <!-- Form Inputs. Each input must have a name="" attribute -->
+        <!-- <h5>Your Name:</h5> -->
+        <input type="text" name="name" required placeholder="Your Name">
+        <!-- <h5>Your E-mail:</h5> -->
+        <input type="email" name="email" required placeholder="Your Email">
+        
+        <textarea name="message" required placeholder="Your Message"></textarea>
+
+        <!-- Honeypot Spam Protection -->
+        <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+    
+        <!-- Custom Confirmation / Success Page -->
+        <!-- <input type="hidden" name="redirect" value="https://mywebsite.com/thanks.html"> -->
+    
+        <button type="submit">Submit Form📧</button>
+ 
+    </form>      
+            </section> 
+
+
+
+    <footer class="footer"> 
+    
+        <div class="footer-content">
+            <p>Thank you for visiting my website!  </p>
+            <p class="footer-quote">"Dream big, work hard!"</p>
+            <p class="footer-year">&copy; <span id="year"></span>SadiyaAkterRahi</p>
+        </div>    
+
+              <div class="wrapper">
+           
+                <a href="https://x.com/rahisadiya173" class="icon twitter">
+                   <div class="tooltip">
+                      Twitter
+                   </div>
+                   <span><i class="fab fa-twitter"></i></span>
+                </a>
+                <a href="https://www.instagram.com/sadiyarahi01/" class="icon instagram">
+                   <div class="tooltip">
+                      Instagram
+                   </div>
+                   <span><i class="fab fa-instagram"></i></span>
+                </a>
+                <a href="https://www.pinterest.com/rahisadiya2004/" class="icon pinterest">
+                    <div class="tooltip">
+                      Pinterest
+                    </div>
+                    <span><i class="fab fa-pinterest"></i></span>
+                 </a>
+                <a href="https://github.com/sadiyarahi2004" class="icon github">
+                <!-- <div class="icon github"> -->
+                   <div class="tooltip">
+                      Github
+                   </div>
+                   <span><i class="fab fa-github"></i></span> 
+                </a>
+                <!-- </div> -->
+                
+             </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
